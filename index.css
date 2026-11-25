@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 10;
     padding: 10;
@@ -6,7 +9,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #190031;
-    background-color: #f1def4;
+    background-color: #f5f0f6;
     line-height: 1.5;
 }
 
@@ -38,12 +41,12 @@ a {
 .btn {
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: fit-content;
     align-items: center;
     background-color: #d13cfa;
-    color: #f4e7f8;
+    color: #f5f0f5;
     border-radius: 30px;
-    padding: 10px 20px;S
+    padding: 10px 20px;
     font-weight: 600;
     font-size: 14px;
 }
@@ -51,12 +54,13 @@ a {
     width: 100%;
     height: 75vh;
     background: linear-gradient(135deg, #b3e6f9 0%, #ddaef7 100%);
-    color: #f3f2ed;
+    color: #2a001d;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 5vw;
+}
     .hero-content {
     width: 70%;
     display: flex;
@@ -72,4 +76,68 @@ a {
 .hero-content p {
     font-size: 18px;
     width: 80%;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+.card img {
+    width: 200px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e0030;
+}
+.book-card .btn {
+    min-width: auto;
+    padding: 8px 16px;
+}
+.reviews {
+    background-color: #ede2f2;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.review-card h5 {
+    font-size: 16px;
+    color: #d13cfa;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 15px;
+    font-style: italic;
+}
+.footer {
+    background-color: #1e0030;
+    color: #e2c9ff;
+    padding: 40px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer p {
+    font-size: 14px;
 }
